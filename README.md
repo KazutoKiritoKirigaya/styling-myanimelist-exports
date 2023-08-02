@@ -30,9 +30,10 @@ _Note: Make sure you have the 'lxml' library installed before running the Python
 pip install lxml
 ```
 
-Enjoy styling and organizing your anime list with your custom XSLT stylesheet!
+Enjoy styling and organizing your anime list!
 
 ## License
 
 Copyright (C) 2023 KazutoKiritoKirigaya <https://github.com/KazutoKiritoKirigaya>
+
 This project is licensed under the AGPL-3.0 License - see the [LICENSE](https://github.com/KazutoKiritoKirigaya/styling-myanimelist-exports/blob/master/LICENSE) file for details.
