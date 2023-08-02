@@ -7,41 +7,81 @@
       <head>
         <title>MyAnimeList</title>
         <style>
-          /* Apply CSS styles to the document */
           body {
-            background-color: #f0f0f0;
+            background-color: aliceblue;
             color: #333;
-            font-family: 'Arial', sans-serif;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
             margin: 0;
-            padding: 0;
+            padding: 0 15px;
           }
+
           h1, h2, h3 {
-            color: #2E51A2;
+            color: #2e51a2;
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
           }
-          .anime-list {
+
+          h1 {
+            font-size: 40px;
+            padding-top: 10px;
+          }
+
+          .anime-list,
+          .user-info-list {
             list-style: none;
             padding: 0;
+            margin: 0;
           }
+
           .anime-entry {
-            margin-bottom: 20px;
-            padding: 10px;
-            border: 1px solid #ccc;
+            margin: 20px auto;
+            padding: 15px;
+            border: 1px solid #ddd;
             background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.2s ease-in-out;
           }
+
+          .anime-entry:hover {
+            background-color: #f8f8f8;
+          }
+
           .anime-title {
-            font-size: 18px;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+          }
+
+          .anime-status {
+            color: #4b85e0;
             font-weight: bold;
           }
-          .anime-status {
-            color: #4B85E0;
-          }
+
           .anime-comments {
-            color: #777;
+            color: #666;
             font-style: italic;
           }
+
           .anime-score {
             color: #333;
             font-weight: bold;
+          }
+
+          .user-info-list li {
+            margin-bottom: 10px;
+            color: #333;
+            font-size: 16px;
+          }
+
+          .user-info-list li::before {
+            content: "►";
+            margin-right: 5px;
+            color: #2e51a2;
+            font-size: 18px;
+          }
+
+          #user-info {
+            text-align: left;
           }
         </style>
       </head>
@@ -53,8 +93,8 @@
 
   <xsl:template match="myanimelist">
     <h1>MyAnimeList</h1>
-    <h2>User Information</h2>
-    <ul>
+    <h2 id="user-info">User Information</h2>
+    <ul class="user-info-list">
       <li>User ID: <xsl:value-of select="myinfo/user_id"/></li>
       <li>User Name: <xsl:value-of select="myinfo/user_name"/></li>
       <li>Total Anime: <xsl:value-of select="myinfo/user_total_anime"/></li>
