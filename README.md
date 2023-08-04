@@ -1,6 +1,6 @@
 # MyAnimeList XML Styling
 
-This is a Python script to apply a custom XSLT stylesheet to an XML file exported from MyAnimeList.net to generate an HTML file with customized styling to match the MyAnimeList site theme. The provided XSLT stylesheet will format the anime list data and apply specific CSS styles to the HTML output.
+This is a program that applies a XSLT stylesheet (based off of the MyAnimeList UI) to an XML file exported from MyAnimeList.net to generate an HTML file with customised styling. The provided XSLT stylesheet will format the anime list data and apply specific CSS styles to the HTML output.
 
 ![MyAnimeList styled output](./assets/output.png)
 
