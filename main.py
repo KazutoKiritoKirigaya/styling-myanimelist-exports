@@ -1,7 +1,7 @@
 import lxml.etree as ET
 
-xmlFileName = "myanimelist.xml" # CHANGE THIS TO THE NAME OF YOUR XML FILE 
-htmlFileName = f"styled_{xmlFileName[:-4]}.html" # Do NOT change this line
+xmlFileName = "myanimelist.xml" 
+htmlFileName = f"styled_{xmlFileName[:-4]}.html" 
 
 # Load the XML data and XSLT stylesheet as bytes
 with open(xmlFileName, 'rb') as f:
