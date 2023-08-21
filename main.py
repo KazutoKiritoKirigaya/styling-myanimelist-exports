@@ -1,7 +1,10 @@
 import lxml.etree as ET
 
+xmlFileName = "myanimelist.xml" # CHANGE THIS TO THE NAME OF YOUR XML FILE 
+htmlFileName = f"styled_{xmlFileName[:-4]}.html" # Do NOT change this line
+
 # Load the XML data and XSLT stylesheet as bytes
-with open('animelist.xml', 'rb') as f:
+with open(xmlFileName, 'rb') as f:
     xml_data = f.read()
 
 with open('myanimelist.xslt', 'r', encoding='utf-8') as f:
@@ -24,11 +27,21 @@ result_tree = xslt_transform(xml_tree)
 output_html = ET.tostring(result_tree, pretty_print=True, encoding='unicode')
 
 # Save the result to a file
-with open('styled_myanimelist.html', 'w', encoding='utf-8') as f:
+with open(htmlFileName, 'w', encoding='utf-8') as f:
     f.write(output_html)
 
-with open("styled_myanimelist.html", "r") as file:
-    lines = file.readlines()
-    lines.insert(5, "<script src='app.js'></script>\n")
+# Read the contents of 'app.js'
+with open('app.js', 'r', encoding='utf-8') as f:
+    app_js_contents = f.read()
 
-print("XSLT transformation completed. The output has been saved to 'styled_myanimelist.html'.")
+# Create a script tag with the contents of 'app.js'
+script_tag = f"<script>\n{app_js_contents}\n</script>\n"
+
+# Insert the script tag at the fourth-from-last line
+with open(htmlFileName, 'r+', encoding='utf-8') as f:
+    lines = f.readlines()
+    lines.insert(-3, script_tag)
+    f.seek(0)
+    f.writelines(lines)
+
+print(f"XSLT transformation and script insertion completed. The output has been saved to \"{htmlFileName}\".")

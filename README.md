@@ -22,7 +22,7 @@ This program has been enhanced with a colouring feature that helps you visually 
     python main.py
     ```
 
-The script will read the `myanimelist.xml` and `myanimelist.xslt` files, apply the XSLT transformation, and save the result as `styled_myanimelist.html` in the same directory.
+The script will read the `myanimelist.xml` and `myanimelist.xslt` files, apply the XSLT transformation, insert `app.js` for styling, and save the result as `styled_myanimelist.html` in the same directory.
 
 Open `styled_myanimelist.html` in your web browser to view your styled anime list.
 
