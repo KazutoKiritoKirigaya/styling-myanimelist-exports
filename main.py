@@ -27,4 +27,8 @@ output_html = ET.tostring(result_tree, pretty_print=True, encoding='unicode')
 with open('styled_myanimelist.html', 'w', encoding='utf-8') as f:
     f.write(output_html)
 
+with open("styled_myanimelist.html", "r") as file:
+    lines = file.readlines()
+    lines.insert(5, "<script src='app.js'></script>\n")
+
 print("XSLT transformation completed. The output has been saved to 'styled_myanimelist.html'.")
