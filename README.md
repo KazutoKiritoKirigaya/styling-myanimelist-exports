@@ -1,8 +1,16 @@
 # MyAnimeList XML Styling
 
-This is a program that applies a XSLT stylesheet (based off of the MyAnimeList UI) to an XML file exported from MyAnimeList.net to generate an HTML file with customised styling. The provided XSLT stylesheet will format the anime list data and apply specific CSS styles to the HTML output.
+This is a program that applies an XSLT stylesheet (based on the MyAnimeList UI) to an XML file exported from MyAnimeList.net to generate an HTML file with customized styling. The provided XSLT stylesheet will format the anime list data and apply specific CSS styles to the HTML output.
 
-![MyAnimeList styled output](./assets/output.png)
+## Coloring Feature
+
+This program has been enhanced with a colouring feature that helps you visually distinguish different anime entry statuses as follows:
+
+![Watching Tile](./assets/watching_tile.png)
+![Completed Tile](./assets/completed_tile.png)
+![On Hold Tile](./assets/on_hold_tile.png)
+![Dropped Tile](./assets/dropped_tile.png)
+![Plan to Watch Tile](./assets/plan_to_watch_tile.png)
 
 ## Usage
 
