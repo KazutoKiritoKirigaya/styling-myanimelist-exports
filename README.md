@@ -38,10 +38,12 @@ _Note: Make sure you have the 'lxml' library installed before running the Python
 pip install lxml
 ```
 
+The `app.js` file then styles and manipulates the anime list entries based on their status. It applies different background colours to the anime entries based on their status and sorts the entries in the form {all watching, all completed, all on-hold, all dropped, and finally all that you plan to watch}.
+
 Enjoy styling and organizing your anime list!
 
 ## License
 
-Copyright (C) 2023 KazutoKiritoKirigaya <https://github.com/KazutoKiritoKirigaya>
+Copyright (C) 2023 ei-cannot-cook <https://github.com/ei-cannot-cook/>
 
-This project is licensed under the AGPL-3.0 License - see the [LICENSE](https://github.com/KazutoKiritoKirigaya/styling-myanimelist-exports/blob/master/LICENSE) file for details.
+This project is licensed under the AGPL-3.0 License - see the [LICENSE](https://github.com/ei-cannot-cook/styling-myanimelist-exports/blob/master/LICENSE) file for details.
