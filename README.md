@@ -14,7 +14,7 @@ This program has been enhanced with a colouring feature that helps you visually 
 
 ## Usage
 
-1. [Export your MyAnimeList](http://myanimelist.net/panel.php?go=export) from MyAnimeList.net as an XML file. Save it as `myanimelist.xml` in the same directory as the Python script.
+1. [Export your MyAnimeList](http://myanimelist.net/panel.php?go=export) from MyAnimeList.net as an XML file. Save it as `myanimelist.xml` in the same directory as the Python script. If `myanimelist.xml` already exists, or for some reason you want to use a different file name, you can change the file name in the Python script.
 
 2. Run the Python script `main.py`:
 
