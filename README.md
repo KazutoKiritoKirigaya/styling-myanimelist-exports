@@ -2,16 +2,6 @@
 
 This is a program that applies an XSLT stylesheet (based on the MyAnimeList UI) to an XML file exported from MyAnimeList.net to generate an HTML file with customized styling. The provided XSLT stylesheet will format the anime list data and apply specific CSS styles to the HTML output.
 
-## Colouring Feature
-
-This program has been enhanced with a colouring feature that helps you visually distinguish different anime entry statuses as follows:
-
-![Watching Tile](./assets/watching_tile.png)
-![Completed Tile](./assets/completed_tile.png)
-![On Hold Tile](./assets/on_hold_tile.png)
-![Dropped Tile](./assets/dropped_tile.png)
-![Plan to Watch Tile](./assets/plan_to_watch_tile.png)
-
 ## Usage
 
 1. [Export your MyAnimeList](http://myanimelist.net/panel.php?go=export) from MyAnimeList.net as an XML file. Save it as `myanimelist.xml` in the same directory as the Python script. If `myanimelist.xml` already exists, or for some reason you want to use a different file name, you can change the file name in the Python script.
@@ -25,6 +15,16 @@ This program has been enhanced with a colouring feature that helps you visually 
 The script will read the `myanimelist.xml` and `myanimelist.xslt` files, apply the XSLT transformation, insert `app.js` for styling, and save the result as `styled_myanimelist.html` in the same directory.
 
 Open `styled_myanimelist.html` in your web browser to view your styled anime list.
+
+## Colouring Feature
+
+This program has been enhanced with a colouring feature that helps you visually distinguish different anime entry statuses as follows:
+
+![Watching Tile](./assets/watching_tile.png)
+![Completed Tile](./assets/completed_tile.png)
+![On Hold Tile](./assets/on_hold_tile.png)
+![Dropped Tile](./assets/dropped_tile.png)
+![Plan to Watch Tile](./assets/plan_to_watch_tile.png)
 
 ## How it Works
 
