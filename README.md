@@ -44,6 +44,6 @@ Enjoy styling and organizing your anime list!
 
 ## License
 
-Copyright (C) 2023 ei-cannot-cook <https://github.com/ei-cannot-cook/>
+Copyright (C) 2023 mjsandagi <https://github.com/mjsandagi/>
 
-This project is licensed under the AGPL-3.0 License - see the [LICENSE](https://github.com/ei-cannot-cook/styling-myanimelist-exports/blob/master/LICENSE) file for details.
+This project is licensed under the AGPL-3.0 License - see the [LICENSE](https://github.com/mjsandagi/styling-myanimelist-exports/blob/master/LICENSE) file for details.
