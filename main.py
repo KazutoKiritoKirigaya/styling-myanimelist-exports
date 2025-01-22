@@ -1,7 +1,7 @@
 import lxml.etree as ET
 
-xml_file_name = "myanimelist.xml" # Change the file name as required.
-html_file_name = f"styled_{xml_file_name[:-4]}.html" 
+xml_file_name = "myanimelist.xml"  # Change the file name as required.
+html_file_name = f"styled_{xml_file_name[:-4]}.html"
 
 # Load the XML data and XSLT stylesheet as bytes
 with open(xml_file_name, "rb") as f:
@@ -44,4 +44,5 @@ with open(html_file_name, "r+", encoding="utf-8") as f:
     f.seek(0)
     f.writelines(lines)
 
-print(f"XSLT transformation and script insertion completed. The output has been saved to \"{html_file_name}\".")
+print(f"XSLT transformation and script insertion completed. The output \
+        has been saved to \"{html_file_name}\".")
