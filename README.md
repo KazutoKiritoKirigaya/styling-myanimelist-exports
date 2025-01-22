@@ -4,9 +4,12 @@ This is a program that applies an XSLT stylesheet (based on the MyAnimeList UI) 
 
 ## Usage
 
-1. [Export your MyAnimeList](http://myanimelist.net/panel.php?go=export) from MyAnimeList.net as an XML file. Save it as `myanimelist.xml` in the same directory as the Python script. If `myanimelist.xml` already exists, or for some reason you want to use a different file name, you can change the file name in the Python script.
+1. [Export your MyAnimeList](http://myanimelist.net/panel.php?go=export) from MyAnimeList.net as an XML file. Unzip the file via `gunzip index.xml.gzip
+` or `gzip -d index.xml.gzip` , depending on your environment.
 
-2. Run the Python script `main.py`:
+2. Save it as `myanimelist.xml`in the same directory as the Python script. If `myanimelist.xml` already exists, or for some reason you want to use a different file name, you can change the file name in the Python script.
+
+3. Run the Python script `main.py`:
 
     ```powershell
     python main.py
@@ -38,7 +41,13 @@ _Note: Make sure you have the 'lxml' library installed before running the Python
 pip install lxml
 ```
 
-The `app.js` file then styles and manipulates the anime list entries based on their status. It applies different background colours to the anime entries based on their status and sorts the entries in the form {all watching, all completed, all on-hold, all dropped, and finally all that you plan to watch}.
+Or using the `requirements.txt` file:
+
+```bash
+pip install -r requirements.txt
+```
+
+The `app.js` file is inserted into the HTML document, styling and manipulating the anime list entries based on their status. It applies different background colours to the anime entries based on their status and sorts the entries in the form {all watching, all completed, all on-hold, all dropped, and finally all that you plan to watch}.
 
 Enjoy styling and organizing your anime list!
 
